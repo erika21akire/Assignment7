@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Assignment7_.MainPage"
+             BackgroundColor="#e5d3b3">
+
+
+    <VerticalStackLayout>
+        <!-- User Avatar -->
+        <Image Source="guuurrl.jpg"  Aspect="AspectFill" HeightRequest="200" WidthRequest="100" />
+
+        <!-- User Name -->
+        <Entry Placeholder="Enter your Name..." Text="{Binding CurrentUser.Name}"/>
+
+        <!-- User Surname -->
+        <Entry Placeholder="Enter your Surname..." Text="{Binding CurrentUser.Surname}"/>
+
+        <!-- User Email -->
+        <Entry Placeholder="Enter your Email..." Text="{Binding CurrentUser.Email}"/>
+
+        <!-- Biographic Information -->
+        <Entry Placeholder="Enter your Bio..." Text="{Binding CurrentUser.Bio}"/>
+
+        <!--Save Button-->
+        <Button Text="Save" Clicked="Button_Clicked"
+         HeightRequest="40"
+         WidthRequest="360"
+         TextColor="#e5d3b3"
+         BackgroundColor="#b99976"/>
+    </VerticalStackLayout>
+   
+</ContentPage>
